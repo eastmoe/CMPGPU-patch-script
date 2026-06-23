@@ -8,7 +8,7 @@ This is an experimental patch script designed for **specific CUDA devices like N
 
 1. **Clone the llama.cpp source code**  
    ```bash
-   git clone https://github.com/ggerganov/llama.cpp
+   git clone https://github.com/ggml-org/llama.cpp/
    cd llama.cpp
    ```
 
