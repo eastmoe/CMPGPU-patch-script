@@ -6,7 +6,7 @@
 
 1. **下载 llama.cpp 源码**  
    ```bash
-   git clone https://github.com/ggerganov/llama.cpp
+   git clone git clone https://github.com/ggml-org/llama.cpp/
    cd llama.cpp
    ```
 
@@ -27,12 +27,11 @@
 
 4. **正常编译 llama.cpp**  
    ```bash
-   mkdir build && cd build
-   cmake .. -DGGML_CUDA=ON
-   cmake --build . --config Release
+   cmake -B build -DGGML_CUDA=ON
+   cmake --build build --config Release
    ```
 
-5. **回退所有修改**  
+5. **回退所有修改（如果你需要的话）**  
    ```bash
    python optimize-cmp-cuda.py --restore
    ```
