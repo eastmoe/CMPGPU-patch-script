@@ -29,12 +29,11 @@ This is an experimental patch script designed for **specific CUDA devices like N
 
 4. **Build llama.cpp as usual**  
    ```bash
-   mkdir build && cd build
-   cmake .. -DGGML_CUDA=ON
-   cmake --build . --config Release
+   cmake -B build -DGGML_CUDA=ON
+   cmake --build build --config Release
    ```
 
-5. **Revert all changes**  
+5. **Revert all changes(If you need)**  
    ```bash
    python optimize-cmp-cuda.py --restore
    ```
